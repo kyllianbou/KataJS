@@ -25,3 +25,7 @@ function betterThanAverage(classPoints, yourPoints) {
       }return total
     }
     }
+
+    function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
