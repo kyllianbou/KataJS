@@ -40,7 +40,7 @@ function finalGrade(exam, projects) {
   }
   return 0;
 }
-function finaltest(exo){
-  
+function finaltest(num){
+  return num *2
 }
 
