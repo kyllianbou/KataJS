@@ -1,0 +1,3 @@
+function carré(nombre) {
+  return nombre * nombre;
+}
