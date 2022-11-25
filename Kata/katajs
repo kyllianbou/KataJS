@@ -41,6 +41,6 @@ function finalGrade(exam, projects) {
   return 0;
 }
 function finaltest(num){
-  return num *2
+  return (num *2)
 }
 
