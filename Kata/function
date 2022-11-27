@@ -1,3 +1,7 @@
 function carré(nombre) {
   return nombre * nombre;
 }
+
+function carre(nombre){
+  return String(nombre)
+}
