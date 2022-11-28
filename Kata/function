@@ -5,3 +5,7 @@ function carré(nombre) {
 function carre(nombre){
   return String(nombre)
 }
+
+function carre(nombre){
+  return (nombre * 4)
+}
