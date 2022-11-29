@@ -9,3 +9,9 @@ function carre(nombre){
 function carre(nombre){
   return (nombre * 4)
 }
+function carre(nombre){
+  return (nombre / 4)
+}
+function carre(nombre){
+  return (nombre - 4)
+}
