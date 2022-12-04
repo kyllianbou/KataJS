@@ -15,3 +15,14 @@ function carre(nombre){
 function carre(nombre){
   return (nombre - 4)
 }
+function showMessage(text) {
+  // ...
+
+  if (text === undefined) { // if the parameter is missing
+    text = 'empty message';
+  }
+
+  alert(text);
+}
+
+showMessage();
