@@ -44,5 +44,7 @@ function finaltest(num){
   return (num *2)
 }
 
-
+function shortcut (string) {
+  return string.replace(/[aeiou]/g, '');
+}
 
