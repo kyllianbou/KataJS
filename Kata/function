@@ -81,3 +81,7 @@ function whatday(num) {
   };
   
   var scoobydoo = new Dog("Great Dane");
+  //Reversed sequence
+  const reverseSeq = n => {
+    return Array(n).fill().map((_,index)=> n - index);
+  };
