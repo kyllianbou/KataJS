@@ -85,3 +85,5 @@ function whatday(num) {
   const reverseSeq = n => {
     return Array(n).fill().map((_,index)=> n - index);
   };
+  //Mr. Freeze
+  Object.freeze(MrFreeze)
