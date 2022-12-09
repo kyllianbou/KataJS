@@ -102,3 +102,7 @@ function whatday(num) {
   function nearestSq(n){
     return Math.round(n**0.5)**2
   }
+  //Grasshopper - Function syntax debugging
+  function main (verb, noun){
+    return verb + noun
+  }
