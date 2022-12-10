@@ -106,3 +106,8 @@ function whatday(num) {
   function main (verb, noun){
     return verb + noun
   }
+  //Grasshopper - Function syntax debugging
+  535
+function main (verb, noun){
+  return verb + noun
+}
