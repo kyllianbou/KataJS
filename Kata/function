@@ -111,3 +111,7 @@ function whatday(num) {
 function main (verb, noun){
   return verb + noun
 }
+//Hex to Decimal
+function hexToDec(hexString){
+  return parseInt(hexString,16)
+}
