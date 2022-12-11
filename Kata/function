@@ -143,3 +143,6 @@ function reverseList(list) {
     return x.toLowerCase() === x.split("").reverse().join("").toLowerCase();
    }
    //Grasshopper - Terminal game move functions
+   function move (position, roll) {
+    return position + roll*2
+    }
