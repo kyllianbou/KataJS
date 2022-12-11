@@ -130,3 +130,7 @@ else if(old < 18){
    return 'drink whisky'
  }
 };
+//Regular Ball Super Ball
+let Ball = function(ballType) {
+  this.ballType = ballType || 'regular'
+};
