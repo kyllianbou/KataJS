@@ -135,3 +135,6 @@ let Ball = function(ballType) {
   this.ballType = ballType || 'regular'
 };
 //Reverse List Order
+function reverseList(list) {
+  return list.reverse()
+  }
