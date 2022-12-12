@@ -146,3 +146,8 @@ function reverseList(list) {
    function move (position, roll) {
     return position + roll*2
     }
+    //Type of sum
+    function typeOfSum(a, b) {
+      return typeof(a+b)
+      // good luck
+    }
