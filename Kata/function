@@ -155,3 +155,17 @@ function reverseList(list) {
     function include(arr, item){
       return arr.includes(item)
      }
+     //Training JS #12: loop statement --for..in and for..of
+     function giveMeFive(obj){
+      let result = []
+      for (let i in obj){
+        if(i.length == 5){
+          result.push(i)
+        }
+        if(obj[i].length == 5){
+          result.push(obj[i])
+        }
+        
+      }
+      return result
+    }
