@@ -174,3 +174,12 @@ function reverseList(list) {
   let str = 'Hello World!';
   console.log(str)
 }
+//Training JS #10: loop statement --for
+function pickIt(arr){
+  var odd=[],even=[];
+  for(var x of arr){
+    ((x % 2) ? odd : even).push(x)
+  }
+  
+  return [odd,even];
+}
