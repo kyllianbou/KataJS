@@ -221,3 +221,5 @@ function equal5(){
       b = v3 ; //set number value to b
   return a % b;
 }
+//Plural
+plural=n=>n!=1
