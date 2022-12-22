@@ -265,3 +265,6 @@ function testEven(n) {
   return n%2===0
 }
 //Grasshopper - Debug sayHello
+function sayHello(name) {
+  return 'Hello, ' + name
+}
