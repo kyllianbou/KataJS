@@ -240,3 +240,7 @@ function findDifference(arr1, arr2) {
   return Math.abs(result1 - result2);
 }
 //Sum The Strings
+function sumStr(a,b) {
+  +a + +b
+    return String(+a + +b)
+ }
