@@ -262,11 +262,11 @@ function switchItUp(number){
 }
 //Is it even?
 function testEven(n) {
-  return n%2===0
+  return n%2===0;
 }
 //Grasshopper - Debug sayHello
 function sayHello(name) {
-  return 'Hello, ' + name
+  return 'Hello, ' + name;
 }
 //Grasshopper - Messi Goals
 var laLigaGoals=43
