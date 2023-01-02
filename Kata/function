@@ -274,3 +274,6 @@ var championsLeagueGoals=10
 var copaDelReyGoals=5
 
 var totalGoals=laLigaGoals+championsLeagueGoals+copaDelReyGoals;
+
+//Simple multiplication
+function simpleMultiplication(n) {if (n % 2 === 0) {return n * 8;} else {return n * 9;}}
