@@ -2,24 +2,25 @@ function carré(nombre) {
   return nombre * nombre;
 }
 
-function carre(nombre){
-  return String(nombre)
+function carre(nombre) {
+  return String(nombre);
 }
 
-function carre(nombre){
-  return (nombre * 4)
+function carre(nombre) {
+  return nombre * 4;
 }
-function carre(nombre){
-  return (nombre / 4)
+function carre(nombre) {
+  return nombre / 4;
 }
-function carre(nombre){
-  return (nombre - 4)
+function carre(nombre) {
+  return nombre - 4;
 }
 function showMessage(text) {
   // ...
 
-  if (text === undefined) { // if the parameter is missing
-    text = 'empty message';
+  if (text === undefined) {
+    // if the parameter is missing
+    text = "empty message";
   }
 
   alert(text);
@@ -32,200 +33,198 @@ function checkAge(age) {
     return true;
   } else {
     // ...
-    return confirm('Did parents allow you?');
+    return confirm("Did parents allow you?");
   }
 }
 //Calculate Price Excluding VAT
-function excludingVatPrice(price){
-  return (price == null) ? -1 : Math.round((price / 1.15) * 100) / 100;
+function excludingVatPrice(price) {
+  return price == null ? -1 : Math.round((price / 1.15) * 100) / 100;
 }
 //Return the day
-function whatday(num) { 
-  switch (num){
-      case 1 :
+function whatday(num) {
+  switch (num) {
+    case 1:
       return "Sunday";
-      case 2 :
+    case 2:
       return "Monday";
-      case 3:
+    case 3:
       return "Tuesday";
-      case 4:
+    case 4:
       return "Wednesday";
-      case 5 :
+    case 5:
       return "Thursday";
-      case 6 :
+    case 6:
       return "Friday";
-      case 7 :
+    case 7:
       return "Saturday";
-      default :
-      return "Wrong, please enter a number between 1 and 7"
+    default:
+      return "Wrong, please enter a number between 1 and 7";
   }
-  
-  
-  
-  }
+}
 
-  //Is the string uppercase?
-  String.prototype.isUpperCase = function() {
-    return this == this.toUpperCase();
-  }
-  //Barking mad
+//Is the string uppercase?
+String.prototype.isUpperCase = function () {
+  return this == this.toUpperCase();
+};
+//Barking mad
 
-  function Dog (breed) {
-    this.breed = breed;
-  }
-  
-  var snoopy = new Dog("Beagle");
-  
-  Dog.prototype.bark = function() {
-    return "Woof";
-  };
-  
-  var scoobydoo = new Dog("Great Dane");
-  //Reversed sequence
-  const reverseSeq = n => {
-    return Array(n).fill().map((_,index)=> n - index);
-  };
-  //Mr. Freeze
-  Object.freeze(MrFreeze)
+function Dog(breed) {
+  this.breed = breed;
+}
 
-  //Training JS #9: loop statement --while and do..while
-  function padIt(str,n){
-    while (n>0){
-      if (n%2 === 0){
-        str = str + "*";
-      }else{
-        str = "*" + str ;
-      }n --;
-    }return str
+var snoopy = new Dog("Beagle");
+
+Dog.prototype.bark = function () {
+  return "Woof";
+};
+
+var scoobydoo = new Dog("Great Dane");
+//Reversed sequence
+const reverseSeq = (n) => {
+  return Array(n)
+    .fill()
+    .map((_, index) => n - index);
+};
+//Mr. Freeze
+Object.freeze(MrFreeze);
+
+//Training JS #9: loop statement --while and do..while
+function padIt(str, n) {
+  while (n > 0) {
+    if (n % 2 === 0) {
+      str = str + "*";
+    } else {
+      str = "*" + str;
+    }
+    n--;
   }
-  //Find Nearest square number
-  function nearestSq(n){
-    return Math.round(n**0.5)**2
-  }
-  //Grasshopper - Function syntax debugging
-  function main (verb, noun){
-    return verb + noun
-  }
-  //Grasshopper - Function syntax debugging
-  535
-function main (verb, noun){
-  return verb + noun
+  return str;
+}
+//Find Nearest square number
+function nearestSq(n) {
+  return Math.round(n ** 0.5) ** 2;
+}
+//Grasshopper - Function syntax debugging
+function main(verb, noun) {
+  return verb + noun;
+}
+//Grasshopper - Function syntax debugging
+535;
+function main(verb, noun) {
+  return verb + noun;
 }
 //Hex to Decimal
-function hexToDec(hexString){
-  return parseInt(hexString,16)
+function hexToDec(hexString) {
+  return parseInt(hexString, 16);
 }
 //Drink about
 function peopleWithAgeDrink(old) {
-  if(old < 14){
-   return 'drink toddy'
- }
-else if(old < 18){
-   return 'drink coke'
- }
- else if(old < 21){
-   return 'drink beer'
- }
-  else{
-   return 'drink whisky'
- }
-};
+  if (old < 14) {
+    return "drink toddy";
+  } else if (old < 18) {
+    return "drink coke";
+  } else if (old < 21) {
+    return "drink beer";
+  } else {
+    return "drink whisky";
+  }
+}
 //Regular Ball Super Ball
-let Ball = function(ballType) {
-  this.ballType = ballType || 'regular'
+let Ball = function (ballType) {
+  this.ballType = ballType || "regular";
 };
 //Reverse List Order
 function reverseList(list) {
-  return list.reverse()
+  return list.reverse();
+}
+//Is it a palindrome?
+function isPalindrome(x) {
+  return x.toLowerCase() === x.split("").reverse().join("").toLowerCase();
+}
+//Grasshopper - Terminal game move functions
+function move(position, roll) {
+  return position + roll * 2;
+}
+//Type of sum
+function typeOfSum(a, b) {
+  return typeof (a + b);
+  // good luck
+}
+//Enumerable Magic - Does My List Include This?
+function include(arr, item) {
+  return arr.includes(item);
+}
+//Training JS #12: loop statement --for..in and for..of
+function giveMeFive(obj) {
+  let result = [];
+  for (let i in obj) {
+    if (i.length == 5) {
+      result.push(i);
+    }
+    if (obj[i].length == 5) {
+      result.push(obj[i]);
+    }
   }
-  //Is it a palindrome?
-  function isPalindrome(x) {
-    return x.toLowerCase() === x.split("").reverse().join("").toLowerCase();
-   }
-   //Grasshopper - Terminal game move functions
-   function move (position, roll) {
-    return position + roll*2
-    }
-    //Type of sum
-    function typeOfSum(a, b) {
-      return typeof(a+b)
-      // good luck
-    }
-    //Enumerable Magic - Does My List Include This?
-    function include(arr, item){
-      return arr.includes(item)
-     }
-     //Training JS #12: loop statement --for..in and for..of
-     function giveMeFive(obj){
-      let result = []
-      for (let i in obj){
-        if(i.length == 5){
-          result.push(i)
-        }
-        if(obj[i].length == 5){
-          result.push(obj[i])
-        }
-        
-      }
-      return result
-    }
-    //Training JS #1: create your first JS function and print "Hello World!"
-    function helloWorld(){
-  let str = 'Hello World!';
-  console.log(str)
+  return result;
+}
+//Training JS #1: create your first JS function and print "Hello World!"
+function helloWorld() {
+  let str = "Hello World!";
+  console.log(str);
 }
 //Training JS #10: loop statement --for
-function pickIt(arr){
-  var odd=[],even=[];
-  for(var x of arr){
-    ((x % 2) ? odd : even).push(x)
+function pickIt(arr) {
+  var odd = [],
+    even = [];
+  for (var x of arr) {
+    (x % 2 ? odd : even).push(x);
   }
-  
-  return [odd,even];
+
+  return [odd, even];
 }
 //Training JS #2: Basic data types--Number
 let v1 = 50,
-    v2 = 100,
-    v3 = 150,
-    v4 = 200,
-    v5 = 2,
-    v6 = 250;
+  v2 = 100,
+  v3 = 150,
+  v4 = 200,
+  v5 = 2,
+  v6 = 250;
 
-function equal1(){
-  let a = v1,   
-      b = v1;   
+function equal1() {
+  let a = v1,
+    b = v1;
   return a + b;
 }
 
 //Please refer to the example above to complete the following functions
-function equal2(){
-  let a = v4 , //set number value to a
-      b = v2 ; //set number value to b
+function equal2() {
+  let a = v4, //set number value to a
+    b = v2; //set number value to b
   return a - b;
 }
 
-function equal3(){
-  let a = v1 , //set number value to a
-      b = v5 ; //set number value to b
+function equal3() {
+  let a = v1, //set number value to a
+    b = v5; //set number value to b
   return a * b;
 }
 
-function equal4(){
-  let a = v4 , //set number value to a
-      b = v5 ; //set number value to b
+function equal4() {
+  let a = v4, //set number value to a
+    b = v5; //set number value to b
   return a / b;
 }
 
-function equal5(){
-  let a = v6  , //set number value to a
-      b = v3 ; //set number value to b
+function equal5() {
+  let a = v6, //set number value to a
+    b = v3; //set number value to b
   return a % b;
 }
 //Plural
-plural=n=>n!=1
+plural = (n) => n != 1;
 //What's the real floor?
 function getRealFloor(n) {
-  return n > 13 ? n - 2 : n > 0 ? n - 1 : n 
+  return n > 13 ? n - 2 : n > 0 ? n - 1 : n;
 }
 //Difference of Volumes of Cuboids
 function findDifference(arr1, arr2) {
@@ -240,12 +239,12 @@ function findDifference(arr1, arr2) {
   return Math.abs(result1 - result2);
 }
 //Sum The Strings
-function sumStr(a,b) {
-  +a + +b
-    return String(+a + +b)
- }
- //Student's Final Grade
- function finalGrade(exam, projects) {
+function sumStr(a, b) {
+  +a + +b;
+  return String(+a + +b);
+}
+//Student's Final Grade
+function finalGrade(exam, projects) {
   if (exam > 90 || projects > 10) {
     return 100;
   } else if (exam > 75 && projects >= 5) {
@@ -256,25 +255,46 @@ function sumStr(a,b) {
   return 0;
 }
 //Switch it Up!
-function switchItUp(number){
-  return ['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine']
-  [number]
+function switchItUp(number) {
+  return [
+    "Zero",
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five",
+    "Six",
+    "Seven",
+    "Eight",
+    "Nine",
+  ][number];
 }
 //Is it even?
 function testEven(n) {
-  return n%2===0;
+  return n % 2 === 0;
 }
 //Grasshopper - Debug sayHello
 function sayHello(name) {
-  return 'Hello, ' + name;
+  return "Hello, " + name;
 }
 //Grasshopper - Messi Goals
-var laLigaGoals=43
-var championsLeagueGoals=10
-var copaDelReyGoals=5
+var laLigaGoals = 43;
+var championsLeagueGoals = 10;
+var copaDelReyGoals = 5;
 
-var totalGoals=laLigaGoals+championsLeagueGoals+copaDelReyGoals;
-
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
 
 //Simple multiplication
-function simpleMultiplication(n) {if (n % 2 === 0) {return n * 8;} else {return n * 9;}}
+function simpleMultiplication(n) {
+  if (n % 2 === 0) {
+    return n * 8;
+  } else {
+    return n * 9;
+  }
+}
+
+//Convert boolean values to strings 'Yes' or 'No'
+
+function boolToWord(bool) {
+  return bool ? "Yes" : "No";
+}
