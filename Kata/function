@@ -298,3 +298,5 @@ function simpleMultiplication(n) {
 function boolToWord(bool) {
   return bool ? "Yes" : "No";
 }
+
+//Beginner Series #4 Cockroach
