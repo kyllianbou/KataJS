@@ -303,4 +303,4 @@ function boolToWord(bool) {
 function cockroachSpeed(s) {
   return Math.floor(s * 27.7778);
 }
-//
+//Grasshopper - Messi goals function
