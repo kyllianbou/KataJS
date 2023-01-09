@@ -307,3 +307,4 @@ function cockroachSpeed(s) {
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
+//Sum without highest and lowest number
