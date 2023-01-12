@@ -324,3 +324,4 @@ function sumArray(array) {
     return total;
   }
 }
+//Third Angle of a Triangle
