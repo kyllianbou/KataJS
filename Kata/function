@@ -329,3 +329,10 @@ function otherAngle(a, b) {
   return 180 - a - b;
 }
 //Thinkful - Logic Drills: Traffic light
+function updateLight(current) {
+  return current === "yellow"
+    ? "red"
+    : current === "green"
+    ? "yellow"
+    : "green";
+}
