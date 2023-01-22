@@ -357,4 +357,4 @@ const quarterOf = (month) => {
     return 4;
   }
 };
-//Get Nth Even Number
+//Is he gonna survive?
