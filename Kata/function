@@ -375,3 +375,4 @@ function betterThanAverage(classPoints, yourPoints) {
   return yourPoints > classAvg;
 }
 //Calculate BMI
+//Simple multiplication
