@@ -374,12 +374,12 @@ function betterThanAverage(classPoints, yourPoints) {
   classAvg = classAvg / classPoints.length;
   return yourPoints > classAvg;
 }
-//Calculate BMI
 //Simple multiplication
-SELECT number,
+/*SELECT number,
 CASE
     WHEN number%2=0 THEN number*8
     ELSE number*9
   END 
   AS res
-  FROM multiplication
+  FROM multiplication*/
+//
