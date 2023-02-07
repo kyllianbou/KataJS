@@ -1,32 +1,35 @@
-function greet(name){
-  return "Hello, " + name + " how are you doing today?"
+function greet(name) {
+  return "Hello, " + name + " how are you doing today?";
 }
 
 function betterThanAverage(classPoints, yourPoints) {
-    // Your code here
-    var classAvg = 0;
-    for (var i = 0; i < classPoints.length; i++){
-      classAvg += classPoints[i]; 
-    }
-    classAvg = classAvg/classPoints.length; 
-    return yourPoints > classAvg;
+  // Your code here
+  var classAvg = 0;
+  for (var i = 0; i < classPoints.length; i++) {
+    classAvg += classPoints[i];
   }
+  classAvg = classAvg / classPoints.length;
+  return yourPoints > classAvg;
+}
 
-  function sumArray(array) {
-    if (array == null){
-      return 0;
-    }else if (array.length<2){
-      return 0;
-    }else{
-      array = array.sort(function(a,b){return a - b;});
-      let total = 0;
-      for (let i = 1;i < array.length - 1; i++){
-        total += array[i] 
-      }return total
+function sumArray(array) {
+  if (array == null) {
+    return 0;
+  } else if (array.length < 2) {
+    return 0;
+  } else {
+    array = array.sort(function (a, b) {
+      return a - b;
+    });
+    let total = 0;
+    for (let i = 1; i < array.length - 1; i++) {
+      total += array[i];
     }
-    }
+    return total;
+  }
+}
 
-    function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 
@@ -40,11 +43,11 @@ function finalGrade(exam, projects) {
   }
   return 0;
 }
-function finaltest(num){
-  return (num *2)
+function finaltest(num) {
+  return num * 2;
 }
 
-function shortcut (string) {
-  return string.replace(/[aeiou]/g, '');
+function shortcut(string) {
+  return string.replace(/[aeiou]/g, "");
 }
-
+//
