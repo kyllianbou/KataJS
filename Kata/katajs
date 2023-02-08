@@ -50,4 +50,4 @@ function finaltest(num) {
 function shortcut(string) {
   return string.replace(/[aeiou]/g, "");
 }
-//
+//Your code here
